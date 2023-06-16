@@ -7,7 +7,7 @@ place = input("Введите ваш город: ")
 country = input("Введите код вашей страны: ")
 country_and_place = place + ", " + country
 
-owm = OWM('0b65431fa007d361c1b04cfdf7eed5ae')  # Ваш ключ с сайта open weather map
+owm = OWM('')  # Ваш ключ с сайта open weather map
 mgr = owm.weather_manager()  #
 observation = mgr.weather_at_place(country_and_place)
 
